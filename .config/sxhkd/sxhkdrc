@@ -11,7 +11,7 @@ super + a
   rofi -show drun -theme config
 
 super + v
-  export CM_LAUNCHER=rofi && clipmenu -theme config-cliphist
+  export CM_LAUNCHER=rofi && clipmenu -theme clipmenu
 
 super + shift + {w, x}
   {feh --randomize --no-fehbg --bg-fill ~/wallpaper/, \
