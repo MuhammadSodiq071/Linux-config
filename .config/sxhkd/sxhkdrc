@@ -50,7 +50,7 @@ F11
 
 # Picom on/off (Animations)
 super + shift + a
-  {kill $(pgrep picom),picom --config ~/.config/bspwm/picom/2.conf &}
+  {kill $(pgrep picom),picom --config ~/.config/bspwm/picom.conf &}
 
 # Power Menu
 alt + F4
