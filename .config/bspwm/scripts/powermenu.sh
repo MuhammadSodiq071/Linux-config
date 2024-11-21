@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 option=$(printf "   Shutdown\n   Reboot\n   Lock\n󰿅   Exit" | rofi -dmenu -p 'Power Menu' -i -theme powermenu)
 
 case "$option" in
