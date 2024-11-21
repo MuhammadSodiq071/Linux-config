@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 TEMP_DIR=/tmp/xcolor
 MSG=${XDG_CACHE_HOME:-$HOME/.cache}/xcolor.msg
 
