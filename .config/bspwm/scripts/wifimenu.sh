@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # Load Network Manager
 network_status=$(ps aux | grep NetworkManager | grep root)
 
