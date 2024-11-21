@@ -1,0 +1,34 @@
+{
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "solid",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.lineNumbers": "relative",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrainsMono', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.fontWeight": 500,
+  "files.autoSave": "afterDelay",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "terminal.integrated.cursorStyle": "underline",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "left",
+  "window.autoDetectColorScheme": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["y"],
+      "after": ["\"", "+", "y"]
+    },
+    {
+      "before": ["<C-c>"],
+      "after": ["g", "g", "0", "V", "G"]
+    },
+    {
+      "before": [";"],
+      "after": [":"]
+    }
+  ]
+}
