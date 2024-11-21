@@ -8,7 +8,7 @@ super + shift + c
   qalculate-gtk
 
 super + a
-  rofi -show drun -replace -i
+  rofi -show drun -theme config
 
 super + v
   export CM_LAUNCHER=rofi && clipmenu -theme config-cliphist
