@@ -16,7 +16,7 @@ xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled
 feh --no-fehbg --bg-fill ~/wallpaper/default.jpg
 dunst &
 clipmenud &
-picom --config $HOME/.config/bspwm/picom/2.conf &
+picom --config ~/.config/bspwm/picom.conf &
 numlockx &
 xsetroot -cursor_name left_ptr
 dunstify 'Welcome!'
