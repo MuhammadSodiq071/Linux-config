@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 fg=#C0CAF5
 wrong=#DB4B4B
 date=#7AA2F7
