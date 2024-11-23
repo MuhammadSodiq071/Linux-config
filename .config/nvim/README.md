@@ -7,4 +7,6 @@ If you have your own configuration, copy it to another place or rename. You can 
 ~/.config/nvim
 ```
 Install NvChad with:
-```git clone https://github.com/NvChad/starter ~/.config/nvim```
+```
+git clone https://github.com/NvChad/starter ~/.config/nvim
+```
