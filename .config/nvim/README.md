@@ -3,8 +3,8 @@
 See the installition on their GitHub page: https://github.com/NvChad/starter
 If you have your own configuration, copy it to another place or rename. You can lose it after installing NvChad. Then, delete files of neovim:
 ```
-~/.local/share/nvim
-~/.config/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.config/nvim
 ```
 Install NvChad with:
 ```
