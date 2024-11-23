@@ -1,3 +1,10 @@
-# NVChad
-## This all is not my own configuration, **BE  SURE** you've installed ***NVChad*** before copying this configuration!
-see the installition on their guthub: https://github.com/NvChad/starter
+# NvChad
+## This all is not my own configuration, **BE  SURE** you've installed ***NvChad*** before copying this configuration!
+See the installition on their GitHub page: https://github.com/NvChad/starter
+If you have your own configuration, copy it to another place or rename. You can lose it after installing NvChad. Then, delete files of neovim:
+```
+~/.local/share/nvim
+~/.config/nvim
+```
+Install NvChad with:
+```git clone https://github.com/NvChad/starter ~/.config/nvim```
