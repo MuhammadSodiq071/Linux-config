@@ -30,5 +30,7 @@
       "before": [";"],
       "after": [":"]
     }
-  ]
+  ],
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrainsMono', monospace",
+  "terminal.integrated.fontSize": 12
 }
