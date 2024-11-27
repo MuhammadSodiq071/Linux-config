@@ -12,7 +12,7 @@ super + a
   rofi -show drun -theme config
 
 super + v
-  export CM_LAUNCHER=rofi && clipmenu -theme clipmenu
+  export CM_LAUNCHER=rofi && clipmenu -p 'Clipboard' -theme clipmenu
 
 super + shift + {w, x}
   {feh --randomize --no-fehbg --bg-fill ~/wallpaper/, \
