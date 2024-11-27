@@ -25,8 +25,8 @@ dunstify 'Welcome!'
 bspc monitor -d 1 2 3 4 5 6 7
 
 # Config
-bspc config border_width          4
-bspc config window_gap            15
+bspc config border_width          2
+bspc config window_gap            16
 bspc config focus_follows_pointer true
 bspc config pointer_modifier      super
 
