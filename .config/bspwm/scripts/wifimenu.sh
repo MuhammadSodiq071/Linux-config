@@ -4,7 +4,7 @@
 network_status=$(ps aux | grep NetworkManager | grep root)
 
 if [ "$network_status" = "" ]; then
-	rofi -dmenu -p "Root Password: " | sudo -S NetworkManager
+	rofi -dmenu -p "Root Password: " -theme config | sudo -S NetworkManager
 fi
 
 # Starts a scan of available broadcasting SSIDs
@@ -20,7 +20,7 @@ elif [[ "$connected" =~ "disabled" ]]; then
 	toggle="󱚽  Enable Wi-Fi"
 fi
 
-chosen_network=$(echo -e "$toggle\n$wifi_list" | uniq -u | rofi -dmenu -i -selected-row 1 -p "Wi-Fi SSID: " )
+chosen_network=$(echo -e "$toggle\n$wifi_list" | uniq -u | rofi -dmenu -i -selected-row 1 -p "Wi-Fi SSID: " -theme config )
 chosen_id=$(echo "${chosen_network:3}" | xargs)
 
 # Parses the list of preconfigured connections to see if it already contains the chosen SSID. This speeds up the connection process
@@ -39,7 +39,7 @@ else
 		nmcli connection up id "$chosen_id" | grep "successfully" && notify-send "Connection Established" "$success_message"
 	else
 		if [[ "$chosen_network" =~ "" ]]; then
-			wifi_password=$(rofi -dmenu -p "Password: " )
+			wifi_password=$(rofi -dmenu -p "Password: " -theme config )
 		fi
 		nmcli device wifi connect "$chosen_id" password "$wifi_password" | grep "successfully" && notify-send "Connection Established" "$success_message"
 	fi
