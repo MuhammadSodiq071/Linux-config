@@ -1,0 +1,17 @@
+#  _________  _   _   _       _ _   
+# |__  / ___|| | | | (_)_ __ (_) |_ 
+#   / /\___ \| |_| | | | '_ \| | __|
+#  / /_ ___) |  _  | | | | | | | |_ 
+# /____|____/|_| |_| |_|_| |_|_|\__|
+#
+# Exports
+export TERM=kitty
+export EDITOR=nvim
+export BROWSER=firefox
+export PATH="/usr/lib/ccache/bin/:$PATH"
+export ZSH="$HOME/.oh-my-zsh"
+export LC_ALL=ru_RU.UTF-8
+export CM_LAUNCHER=rofi
+
+setopt no_beep
+

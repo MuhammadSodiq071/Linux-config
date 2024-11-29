@@ -1,0 +1,9 @@
+@import "~/.config/rofi/config.rasi"
+
+window {
+  width: 400px;
+  height: 600px;
+  x-offset: 475px;
+  y-offset: -25px;
+}
+
