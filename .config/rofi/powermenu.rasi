@@ -1,7 +1,0 @@
-@import "~/.config/rofi/config.rasi"
-
-window {
-    width: 500px;
-    height: 350px;
-}
-
