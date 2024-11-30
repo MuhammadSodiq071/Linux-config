@@ -14,12 +14,14 @@
 ![Screenshot](screenshots/screenshot1.png)
 
 ### Ranger
-You can configure it on `~/.config/ranger/rc.conf` file. You can also edit icons on `~/.config/ranger/plugins/ranger_devicons/devicons.py`
+You can configure it on `~/.config/ranger/rc.conf` file. You can also edit icons on `~/.config/ranger/plugins/ranger_devicons/devicons.py`.
 See details on `https://github.com/ranger/ranger`
+
 ![Ranger](screenshots/ranger.png)
 
 ### [Neovim](https://neovim.io/)
 Read the `README.md` file on this repository on `HOME/.config/nvim/` directory
+
 ![NeoVim](screenshots/nvim.png)
 
 ### [Rofi](https://github.com/adi1090x/rofi)
