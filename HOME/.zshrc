@@ -19,6 +19,18 @@ done
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 (( ! ${+functions[p10k]} )) || p10k finalize
 
+lf() {
+    local tempfile=$(mktemp)
+    ranger --choosedir="$tempfile" "$@"
+    if [[ -f $tempfile ]]; then
+        local dest=$(<"$tempfile")
+        rm -f "$tempfile"
+        if [[ -d $dest ]]; then
+            cd "$dest"
+        fi
+    fi
+}
+
 alias ls='lsd'
 alias la='lsd -la'
 
