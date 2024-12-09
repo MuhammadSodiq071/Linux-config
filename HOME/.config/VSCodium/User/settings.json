@@ -8,7 +8,6 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "editor.fontWeight": 500,
-  "files.autoSave": "afterDelay",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
   "terminal.integrated.cursorStyle": "underline",
@@ -32,5 +31,8 @@
     }
   ],
   "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrainsMono', monospace",
-  "terminal.integrated.fontSize": 12
+  "terminal.integrated.fontSize": 12,
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  }
 }

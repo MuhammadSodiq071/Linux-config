@@ -39,13 +39,20 @@ super + shift + {Escape, p}
   {pkill -USR1 -x sxhkd && notify-send "SXHKD is Reloaded", \
   . ~/.config/bspwm/scripts/toggle-polybar.sh}
 
+# Reload keyboard settings
+super + ctrl + period
+  . ~/.config/bspwm/scripts/keyboard-setup.sh && notify-send "Keyboard Setup"
+
 # Change Keyboard Language
 super + space
-  setxkbmap {"ru", "us"}
+  setxkbmap {"ru", "us"} && ~/.config/bspwm/scripts/keyboard-setup.sh
 
 # Screenshot
 Print
   flameshot gui
+
+shift + Print
+  flameshot gui -d 3000
 
 # Floating/Tiled
 super + t

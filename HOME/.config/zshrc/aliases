@@ -6,24 +6,17 @@
 #
 # General
 
-alias syu='yay -Syu'
-alias syyuu='yay -Syyuu'
+alias syu='paru -Syu'
+alias syyuu='paru -Syyuu'
 alias S='sudo pacman -S'
-alias yS='yay -S'
-alias Ss='pacman -Ss'
-alias ySs='yay -Ss'
-alias Q='pacman -Q'
-alias yQ='yay -Q'
-alias R='sudo pacman -R'
-alias yR='yay -R'
 alias z='zsh'
 alias cat='bat'
 alias ssystemctl='sudo systemctl'
 alias sv='sudoedit'
 alias clock='tty-clock -s -c -C 4'
-alias nf='fastfetch'
-alias pf='fastfetch --config examples/10 --logo ~/.config/fastfetch/logo'
-alias ff='fastfetch --config examples/13'
+alias nf='fastfetch --config ~/.config/fastfetch/all.jsonc --logo ~/.config/fastfetch/logo'
+alias pf='fastfetch --logo ~/.config/fastfetch/logo'
+alias ff='fastfetch --config ~/.config/fastfetch/2.jsonc'
 alias c='clang'
 alias cpp='clang++'
 alias python='python3.13'
@@ -34,5 +27,7 @@ alias cs='dotnet'
 
 # System
 alias touchpad-fix='xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1; xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1'
+alias kbsetup='. ~/.config/bspwm/scripts/keyboard-setup.sh'
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+
 

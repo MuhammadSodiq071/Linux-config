@@ -34,3 +34,4 @@ lf() {
 alias ls='lsd'
 alias la='lsd -la'
 
+
