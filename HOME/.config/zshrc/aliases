@@ -1,0 +1,11 @@
+alias spacman='doas pacman'
+alias cat='bat'
+alias sysctl='systemctl'
+alias ssysctl='doas systemctl'
+alias clock='tty-clock -scC 4'
+alias nf='fastfetch --config ~/.config/fastfetch/all.jsonc'
+alias pf='fastfetch --logo ~/.config/fastfetch/logo'
+alias ff='fastfetch --config ~/.config/fastfetch/2.jsonc'
+
+alias kbsetup='. ~/.config/bin/keyboard-setup.sh'
+

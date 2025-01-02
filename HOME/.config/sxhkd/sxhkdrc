@@ -1,0 +1,107 @@
+super + q
+  bspc node -c
+
+super + {Return, b, c}
+  {alacritty, firefox, vscodium}
+
+super + shift + {c,Return}
+  {qalculate-gtk, kitty}
+
+super + a
+  rofi -show drun -theme config
+
+super + v
+  export CM_LAUNCHER=rofi && clipmenu -p 'Clipboard' -theme clipmenu
+
+super + shift + {w, x}
+  {feh --randomize --no-fehbg --bg-fill ~/wallpaper/, \
+  . ~/.config/bin/color-pick.sh}
+
+super + {_,shift + }{h,j,k,l}
+  bspc node -{f,s} {west,south,north,east}
+
+alt + {_,shift + } Tab
+  {bspc node -f last.local, \
+  bspc node -f next.local}
+
+super + Tab
+  bspc node -f last
+
+super + {_,shift + }{1-9,0}
+  bspc {desktop -f,node -d} '^{1-9,10}'
+
+super + ctrl + shift + {j,k}
+  bspc desktop -f {prev,next}
+
+# Reload SXHKD and Polybar
+super + shift + {Escape, p}
+  {pkill -USR1 -x sxhkd && notify-send "SXHKD is Reloaded", \
+  . ~/.config/bin/toggle-polybar.sh}
+
+# Reload keyboard settings
+super + ctrl + period
+  . ~/.config/bin/keyboard-setup.sh && notify-send "Keyboard Setup"
+
+# Change Keyboard Language
+super + space
+  setxkbmap {"ru", "us"} && ~/.config/bin/keyboard-setup.sh
+
+# Screenshot
+Print
+  flameshot gui
+
+shift + Print
+  flameshot gui -d 3000
+
+# Floating/Tiled
+super + t
+  bspc node -t {floating, tiled}
+
+# Fullscreen/Tiled
+F11
+  bspc node -t {fullscreen, tiled}
+
+super + m
+  bspc desktop -l next
+
+# Picom on/off (Animations)
+super + shift + a
+  {kill $(pgrep picom),picom --config ~/.config/bspwm/picom.conf &}
+
+# Power Menu
+alt + F4
+  . ~/.config/bin/powermenu.sh
+
+# Resize Active Window
+super + ctrl + {Left,Down,Up,Right}
+  n=20; \
+  { d1=right;   d2=left;  dx=-$n; dy=0;   \
+  , d1=bottom;  d2=top;   dx=0;   dy=$n;  \
+  , d1=bottom;  d2=top;   dx=0;   dy=-$n; \
+  , d1=right;   d2=left;  dx=$n;  dy=0;   \
+  } \
+  bspc node --resize $d1 $dx $dy || bspc node --resize $d2 $dx $dy
+
+super + ctrl + {h,j,k,l}
+  bspc node -v {-20 0,0 20,0 -20,20 0}
+
+super + alt + {h,j,k,l,BackSpace}
+  bspc node -p {west,south,north,east,cancel}
+
+super + alt + Delete
+  {xhost +SI:localuser:root && notify-send "localuser:root being added to access control list", \
+  xhost -SI:localuser:root && notify-send "localuser:root being removed from access control list"}
+
+# FN Buttons
+# Brightness up/down
+{XF86MonBrightnessUp, XF86MonBrightnessDown}
+  {brightnessctl -q s +10%, brightnessctl -q s 10%-}
+
+# Mute/Unmute
+XF86AudioMute
+  wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+
+{XF86AudioRaiseVolume,XF86AudioLowerVolume}
+  pactl set-sink-volume @DEFAULT_SINK@ {+,-}5%
+
+
