@@ -1,9 +1,9 @@
 #!/bin/sh
 
-# Зажатие CapsLock => Ctrl
+# Tapping CapsLock => Ctrl
 setxkbmap -option ctrl:nocaps
 
-# Нажатие CapsLock => Escape
+# Holding CapsLock => Escape
 xcape -e 'Control_L=Escape'
 
 # Menu => Super
